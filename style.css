@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=Roboto+Condensed:wght@400;700&display=swap');
 
 :root {
-    --primario: #171717;
+    --primario: #EDEDED;
     --secundario: #DA0037;
-    --terciario: #EDEDED;
     --comodin: #444444;
+    --comodin2:rgba(225, 225, 225, 0.5);
     --fuentetexto: 'Bree Serif', serif;
     --fuentetitulo: 'Roboto Condensed';
+
+} 
+
+.dark-theme{
+    --primario: #171717;
+    --comodin: #EDEDED;
+
+
 }
 
 a {
@@ -40,7 +48,7 @@ p {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 2fr 1fr;
-    height: 100vh;
+    height: 90vh;
 }
 
 .box {
@@ -74,7 +82,7 @@ p {
 h1 {
     font-family: var(--fuentetitulo);
     text-transform: uppercase;
-    color: var(--terciario);
+    color: var(--comodin);
     font-size: 80px;
     /* margin-bottom: 0%;  NO VA!!*/
 }
@@ -114,12 +122,12 @@ p {
 
     display: flex;
     flex-direction: column;
+    color: var(--comodin);
 
 }
 
 .containerAside__enlaces a {
 
-    color: var(--terciario);
     font-size: 20px;
     text-transform: uppercase;
     line-height: 40px;
@@ -334,6 +342,7 @@ li {
 .about__info p {
     text-align: start;
     font-size: 18px;
+    color: #171717;
 }
 
 @media (max-width:576px) {
@@ -533,7 +542,7 @@ li {
 
 
 h2 {
-    color: white;
+    color:var(--darktheme);
 }
 
 @media (min-width:577px) and (max-width:768px) {
@@ -597,14 +606,14 @@ h2 {
 .bar {
     width: 350px;
     height: 20px;
-    background: rgba(225, 225, 225, 0.5);
+    background: white;
     border-radius: 10px;
 }
 
 .progress {
     width: var(--w);
     height: 100%;
-    background: var(--terciario);
+    background: var(--secundario);
     border-radius: 10px;
     animation: animate 5s ease;
 
@@ -723,22 +732,18 @@ a:visited {
 
 }
 
-@media (min-width:769px) and (max-width:992px){
+@media (min-width:769px){
 
     .containerFooter {
-display: none;    }
-}
+        
+margin-top: 250px;  
 
-@media (min-width:993px) and (max-width:1280px)  { 
-
-    .containerFooter{
-
-grid-template-columns: 60% 40%;
-
-    }
+grid-template-columns: 2fr 1.2fr ;
 
 }
 
+
+}
 /* --------------------------------------------------------------------Projects------------------------------------------------ */
 
 .containerProjects {
@@ -790,8 +795,9 @@ grid-template-columns: 60% 40%;
 
 .oldies h4 {
     text-align: start;
-    font-size: 20px;
-    color: white;
+    font-size: 22px;
+    color: var(--darktheme);
+    font-weight:bolder;
 
 }
 
@@ -844,7 +850,6 @@ grid-template-columns: 60% 40%;
     .oldies h4 {
         text-align: start;
         font-size: 18px;
-
     }
 
 }
@@ -893,3 +898,23 @@ flex-direction: column;
     }
 
 }
+
+
+
+/* Theme */
+
+#icon{
+width: 30px;
+cursor: pointer;
+
+}
+
+.theme{
+    margin-top: 35px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
