@@ -139,6 +139,17 @@ p {
 }
 
 
+
+.containerAside__enlaces a {
+
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 40px;
+    margin-left: 20px;
+    font-family: var(--fuentetexto);
+    color: var(--comodin);
+}
+
 .containerAside__enlaces a:hover {
     background-color: #D72323;
     border-radius: 10px;
@@ -149,14 +160,6 @@ color: var(--primario);
  
 
 
-.containerAside__enlaces a {
-
-    font-size: 20px;
-    text-transform: uppercase;
-    line-height: 40px;
-    margin-left: 20px;
-    font-family: var(--fuentetexto);
-}
 
 .itemLine {
 
@@ -763,25 +766,24 @@ margin-top: 20px;
     align-items: center;
 }
 
-
-.linkfooter {
-display: flex;
-flex-direction: row;
-justify-content: flex-end;
-grid-template-columns:  2/3 ;  
-grid-row: 1/2; 
- color: var(--text);
- margin-right: 25px;
-}
-
 .containerFooter a {
     font-family: var(--fuentetexto);
     text-transform: uppercase;
     margin-left: 20px;
+    color: var(--text);
 }
 
 
-.containerFooter a:hover {
+.linkfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    grid-template-columns:  2/3 ;  
+    grid-row: 1/2; 
+     margin-right: 25px;
+    }
+
+.linkfooter a:hover {
 
     color: var(--secundario)
 }
@@ -795,10 +797,6 @@ img {
 }
 
 
-a:visited {
-    color: var(--terciario);
-
-}
 
 .containerIcons {
     grid-template-columns:  2/3 ;  
