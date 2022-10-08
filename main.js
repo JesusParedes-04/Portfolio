@@ -10,3 +10,6 @@ var win= window.open(`https://wa.me/${number}?text=Hello!%20my%20name%20is%20${n
 %20${surname}, I want to ...:%20${message}`,'_blank');       
 }
 evento.addEventListener('click', enviarFormulario)
+
+
+``
