@@ -339,7 +339,7 @@ li {
 .containerAbout {
 
     display: flex;
-    width: 90%;
+    width: 80%;
     flex-direction: column;
     align-items: center;
     margin-left: auto;
