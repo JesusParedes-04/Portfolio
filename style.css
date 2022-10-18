@@ -367,6 +367,14 @@ li {
     line-height: 1;
     text-align: left;
 }
+.about__profile{
+width: 28rem;
+height: 28rem;
+border-radius: 100%;
+background-image: url(/Fotografía/Proyect_img/profile.jpg);
+background-size: cover;
+}
+
 
 .about__info p {
     color: var(--text);
@@ -448,6 +456,12 @@ li {
         align-items: center;
     }
 
+
+    .about__profile{
+        width: 24rem;
+        height: 24rem;
+        }
+
     .about__info {
         width: 60%;
     }
@@ -493,8 +507,13 @@ li {
         margin-left: auto;
         margin-right: auto;
         column-gap: 5rem;
+        justify-content: center;
     }
 
+    .about__profile{
+        width: 28rem;
+        height: 28rem;
+        }
 
     .aboutMe h1 {
         text-transform: uppercase;
@@ -682,6 +701,8 @@ li {
     .tittleGallery {
         display: grid;
         grid-template-areas: "super1 super1 .";
+        margin-bottom: 5rem;
+        margin-top: 5rem;
     }
 
     .tittleGallery_tittle {
@@ -925,6 +946,31 @@ img {
     font-size: .9rem;
 }
 
+.webContainer__photo1{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-image: url(/Fotografía/Proyect_img/logo2Movile-01.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #444444;
+    margin-bottom: 2rem;
+}
+
+ .webContainer__photo22 {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-image: url(/Fotografía/Proyect_img/logoMovilO-01.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  background-color:white
+
+
+}
 
 
 /* barrilete */
@@ -1044,13 +1090,12 @@ img {
 
     .webContainer__photo {
         grid-area: work;
-        object-fit: cover;
+        margin: 0 auto;
     }
 
     .webContainer__photo2 {
         grid-area: work2;
-        object-fit: cover;
-
+margin: 0 auto;
     }
 
     .webContainer__description {
@@ -1240,6 +1285,7 @@ img {
         column-gap: 2rem;
         margin-left: 2rem;
         margin-right: 2rem;
+        margin-bottom: 5rem;
     }
 
     .webContainer__title {
@@ -1258,10 +1304,18 @@ img {
         /*----------------- Aprender bien writing-mode NOVEDAD!!!!!!!!--*/
         font-size: 10rem;
     }
-
-    .webContainer__photo {
+    .webContainer__photo{
         grid-area: work;
+        margin: 0 auto;
+
+
     }
+    .webContainer__photo1 {
+        width: 300px;
+        height: 300px;
+
+    }
+
 
     .webContainer__description {
         grid-area: description;
@@ -1276,9 +1330,14 @@ img {
         font-family: var(--fuentetexto);
         color: var(--comodin);
     }
+.webContainer__photo2{
+    grid-area: work2;
+    margin: 0 auto;
 
-    .webContainer__photo2 {
-        grid-area: work2;
+}
+    .webContainer__photo22 {
+        width: 300px;
+        height: 300px;
     }
 
     .webContainer__description2 {
@@ -1318,7 +1377,7 @@ img {
         grid-template-areas: ".  titulo titulo";
         border-radius: 10px;
         margin: 2rem;
-
+margin-bottom: 8rem;
     }
 
     .containerBrandsx__titulo {
