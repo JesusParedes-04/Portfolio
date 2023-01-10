@@ -26,7 +26,7 @@ if (localStorage.getItem('darkKey') === 'true') {
 const evento = document.getElementById('send')
 
 
-evento.addEventListener('click', enviarFormulario)
+
 
 const enviarFormulario = () => {
     let name = document.getElementById('name').value;
