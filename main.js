@@ -1,21 +1,24 @@
-
-
-
 const toggleOff = document.querySelector(".fa-toggle-off")
-const whiteTheme = document.querySelector('.white-theme')
-const textOff = document.querySelector('textOff')
+const modoOscuro = document.querySelector('.dark-theme')
 
-function cambiarEstado() {
+if (toggleOff) {
 
-        toggleOff.classList.toggle("fa-toggle-off")
-        toggleOff.classList.toggle("fa-toggle-on");
-        whiteTheme.classList.toggle('white-theme')
-        whiteTheme.classList.toggle('dark-theme');
+    toggleOff.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme');
 
+        if (document.body.classList.contains('dark-theme')) {
+            localStorage.setItem('darkKey', 'true')
+        } else {
+            localStorage.setItem('darkKey', 'false')
+        }
+    });
 }
 
-
-toggleOff.addEventListener('click', cambiarEstado)
+if (localStorage.getItem('darkKey') === 'true') {
+    document.body.classList.add('dark-theme')
+} else {
+    document.body.classList.remove('dark-theme')
+};
 
 
 
@@ -26,11 +29,11 @@ const evento = document.getElementById('send')
 evento.addEventListener('click', enviarFormulario)
 
 const enviarFormulario = () => {
-        let name = document.getElementById('name').value;
-        let surname = document.getElementById('surname').value;
-        let message = document.getElementById('message').value;
-        let number = 543512229161;
-        var win = window.open(`https://wa.me/${number}?text=Hello!%20my%20name%20is%20${name}
+    let name = document.getElementById('name').value;
+    let surname = document.getElementById('surname').value;
+    let message = document.getElementById('message').value;
+    let number = 543512229161;
+    var win = window.open(`https://wa.me/${number}?text=Hello!%20my%20name%20is%20${name}
 %20${surname}, I want to ...:%20${message}`, '_blank');
 }
 evento.addEventListener('click', enviarFormulario)

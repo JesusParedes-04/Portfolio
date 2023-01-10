@@ -15,29 +15,45 @@
 
 }
 
-/* background  */
-.white-theme {
-    background-color: var(--primario);
-    color: #444444;
-
+body {
+    background-color: var(--primario)
 }
 
+a {
+    color: #444444;
+}
+
+
+/* Dark-theme  */
 .dark-theme {
-    background-color: var(--comodin);
-    color: #EDEDED;
+    color: var(--primario);
+    background-color: #444444;
 
-}
-
-/* Enlaces  */
-
-.white-theme a {
-    color: #444444;
 }
 
 .dark-theme a {
-    color: #EDEDED;
+    color: var(--primario);
 }
 
+.dark-theme p {
+    color: var(--primario);
+}
+
+.dark-theme h4 {
+    color: var(--primario);
+}
+
+.dark-theme h3 {
+    color: var(--primario);
+}
+
+.dark-theme h1 {
+    color: var(--primario);
+}
+
+.dark-theme h2 {
+    color: var(--primario);
+}
 
 .containerAside__enlaces a {
     margin: 0;
@@ -45,15 +61,27 @@
 }
 
 
-h3,
-h4,
-h5 {
-    font-family: var(--fuentetitulo)
+h1 {
+    color: #444444;
+}
+
+h2 {
+    color: #444444;
+}
+
+h4 {
+    color: #444444;
+}
+
+h3 {
+    color: #444444;
 }
 
 p {
-    font-family: var(--fuentetexto)
+    font-family: var(--fuentetexto);
+    color: var(--comodin)
 }
+
 
 .container {
     display: grid;
@@ -867,7 +895,8 @@ img {
     border-radius: 10px;
     width: 100%;
     margin-bottom: 2rem;
-    background-color: var(--comodin);
+    background-color: #444444;
+    box-shadow: 5px 5px var(--primario)
 }
 
 .webContainer__title h2 {
@@ -875,7 +904,7 @@ img {
     text-align: center;
     color: #EDEDED;
     text-transform: uppercase;
-    font-family: var(--fuentetitulo);
+    /* font-family: var(--fuentetitulo); */
     margin: 0%;
 
 }
@@ -954,7 +983,7 @@ img {
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
-
+    box-shadow: 5px 5px var(--primario)
 }
 
 .containerBrandsx__titulo {
@@ -1053,10 +1082,8 @@ img {
         grid-area: title;
         justify-content: center;
         align-items: center;
-        /* background-color: var(--comodin); */
         border-radius: 10px;
         margin-bottom: 2rem;
-
     }
 
     .webContainer__photo {
@@ -1278,6 +1305,9 @@ img {
         align-items: center;
         border-radius: 10px;
         height: 97.5%;
+        /* border: solid 5px var(--primario); */
+        box-shadow: 5px 5px var(--primario);
+
     }
 
 
@@ -1380,6 +1410,7 @@ img {
         border-radius: 10px;
         margin: 2rem;
         margin-bottom: 8rem;
+
     }
 
     .containerBrandsx__titulo {
@@ -1388,6 +1419,7 @@ img {
         align-items: center;
         border-radius: 10px;
         margin-right: 4rem;
+
     }
 
     .containerBrandsUno {
@@ -1399,6 +1431,10 @@ img {
         row-gap: 1rem;
         margin-left: 2rem;
         margin-right: 2rem;
+    }
+
+    .containerBrandsx__titulo {
+        box-shadow: 5px 5px var(--primario)
     }
 
     .containerBrandsx__titulo h2 {
