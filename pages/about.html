@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
-  <link rel="shortcut icon" href="/Fotografía/Proyect img/fav_Mesa de trabajo 1.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/Fotografía/Proyect_img/fav-icon.png" type="image/x-icon">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -14,12 +14,11 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
+<body class="white-theme">
 
   <header>
 
-
-    <nav class="navbar navbar-expand-lg bg-nav">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,42 +26,88 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link navbar-link" aria-current="page" href="/index.html">Home</a>
-            <a class="nav-link navbar-link" href="./about.html">About</a>
-            <a class="nav-link navbar-link" href="./projects.html">Projects</a>
-            <a class="nav-link navbar-link" href="./Services.html">Services</a>
-            <a class="nav-link navbar-link" href="./contact.html">Contact</a>
+            <a class="nav-link navbar-link" aria-current="page" href="/index.html">Inicio</a>
+            <a class="nav-link navbar-link" href="./about.html">Conóceme</a>
+            <a class="nav-link navbar-link" href="./projects.html">Proyectos</a>
+            <a class="nav-link navbar-link" href="./gallery.html">Galeria</a>
+            <a class="nav-link navbar-link" href="./contact.html">Contacto</a>
+          </div>
+          <div class=" container-fluid ">
+            <span class="d-flex justify-content-end mt-2 me-4">
+              <i class="fa-solid fa-toggle-off fa-2xl">
+              </i>
+            </span>
           </div>
         </div>
       </div>
     </nav>
 
   </header>
-
+  <!-- 
+  <div class="aboutMe">
+    <h1>Sobre mi</h1>
+  </div> -->
 
   <main>
-    <section class="aboutMe">
-      <h1>About</h1>
+
+    <div class="containerAbout">
+      <div class="about__profile">
       </div>
 
-      <div class="containerAbout">
-        <div class="about__profile">
-        </div>
 
-        <div class="about__info">
-          <div class="about__info__names">
-            <h3>Hi!, <br> I'm Jesus.</h3>
-          </div>
-          <div class="about__info__info">
-            <p> I am a web developer who has collaborated and worked in various areas creating and developing different digital products.</p>
-            <p>Regarding my personality, I consider that the passion for technology and minimalism has formed me with an analytical and curious profile which has led me to continuous learning in the different areas where I have had to work. 
-              I consider each project unique, which I start with a lot of energy and curiosity to know new things to challenge myself always.</p>
-              <p>I am currently training as a fullstack developer to offer a more complete profile to my clients, you can know a little about my work here.</p>
-          </div>
+      <div class="about__info">
+        <div class="about__info__names">
+          <h3>Hola!, <br> Soy Jesús.</h3>
         </div>
-    </section>
+        <div class="about__info__info textOff">
 
-    <section class="containerSkills">
+
+          <p>
+            Soy un desarrollador web que ha colaborado y trabajado en diversas áreas creando y desarrollando diferentes
+            productos digitales.
+
+            Respecto a mi personalidad, considero que la pasión por la tecnología y el minimalismo me ha formado con un
+            perfil analítico y curioso lo que me ha llevado al aprendizaje continuo en las diferentes áreas donde me ha
+            tocado trabajar. Considero cada proyecto único, que empiezo con mucha energía y curiosidad por conocer cosas
+            nuevas para desafiarme siempre.
+
+            Actualmente me estoy formando como desarrollador fullstack para ofrecer un perfil más completo a mis
+            clientes, puedes conocer un poco de mi trabajo aquí.
+          </p>
+
+
+          <!-- <p> I am a web developer who has collaborated and worked in various areas creating and developing different
+            digital products.</p>
+          <p>Regarding my personality, I consider that the passion for technology and minimalism has formed me with an
+            analytical and curious profile which has led me to continuous learning in the different areas where I have
+            had to work.
+            I consider each project unique, which I start with a lot of energy and curiosity to know new things to
+            challenge myself always.</p>
+          <p>I am currently training as a fullstack developer to offer a more complete profile to my clients, you can
+            know a little about my work here.</p> -->
+        </div>
+      </div>
+
+      <!-- 
+
+      <div class="about__info">
+        <div class="about__info__names">
+          <h3>Hi!, <br> I'm Jesus.</h3>
+        </div>
+        <div class="about__info__info">
+          <p> I am a web developer who has collaborated and worked in various areas creating and developing different
+            digital products.</p>
+          <p>Regarding my personality, I consider that the passion for technology and minimalism has formed me with an
+            analytical and curious profile which has led me to continuous learning in the different areas where I have
+            had to work.
+            I consider each project unique, which I start with a lot of energy and curiosity to know new things to
+            challenge myself always.</p>
+          <p>I am currently training as a fullstack developer to offer a more complete profile to my clients, you can
+            know a little about my work here.</p>
+        </div>
+      </div> -->
+
+      <!-- <section class="containerSkills">
 
       <h2>Skills</h2>
 
@@ -125,40 +170,53 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
+
 
 
   </main>
 
-  <footer class="containerFooter">
 
-    <div class="containerIcons">
+  <div class="containerIcons">
 
+    <div class="iconModifier">
       <a href="https://github.com/JesusParedes-04" target="_blank">
         <span class="spanIcon">
-          <i class="fa fa-github fa-2xs"></i>
+          <i class="fa-brands fa-github fa-2xs"></i>
         </span>
       </a>
-
+    </div>
+    <div class="iconModifier">
       <a href="https://www.instagram.com/jesuusparedes/" target="_blank">
         <span class="spanIcon">
           <i class="fa-brands fa-square-instagram fa-2xs"></i>
         </span>
       </a>
     </div>
+    <div class="iconModifier">
+      <a href="https://www.linkedin.com/in/jesuparedes46/" target="_blank">
+        <span class="spanIcon">
+          <i class="fa-brands fa-linkedin fa-2xs"></i>
+        </span>
+      </a>
 
+    </div>
+  </div>
+
+
+  <footer class="containerFooter">
 
     <div class="linkfooter">
 
-      <nav class="navbar navbar-expand-lg bg-navFooter">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link navbar-link" aria-current="page" href="/index.html">Home</a>
-              <a class="nav-link navbar-link" href="./about.html">About</a>
-              <a class="nav-link navbar-link" href="./projects.html">Projects</a>
-              <a class="nav-link navbar-link" href="./Services.html">Services</a>
-              <a class="nav-link navbar-link" href="./contact.html">Contact</a>
+              <a class="nav-link navbar-link" aria-current="page" href="/index.html">Inicio</a>
+              <a class="nav-link navbar-link" href="./about.html">Conóceme</a>
+              <a class="nav-link navbar-link" href="./projects.html">Proyectos</a>
+              <a class="nav-link navbar-link" href="./gallery.html">Galeria</a>
+              <a class="nav-link navbar-link" href="./contact.html">Contacto</a>
             </div>
           </div>
         </div>
@@ -171,7 +229,7 @@
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
 
-  <script src="/main.js">
+  <script src="../main.js"></script>
 
   </script>
 </body>
