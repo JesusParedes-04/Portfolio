@@ -385,6 +385,8 @@ li {
     text-align: left;
 }
 
+
+
 .about__profile {
     width: 20rem;
     height: 20rem;
@@ -401,6 +403,16 @@ li {
     margin-top: 20px;
     text-align: start;
     font-size: 16px;
+}
+
+.styleError{
+    background-color: #d35b5b;
+    color: white;
+    font-family: var(--fuentetexto);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: .5rem;
 }
 
 .containerSkills {
@@ -519,12 +531,21 @@ li {
 
 
 @media(min-width: 1025px) {
+    .container__profile{
 
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+    
+    }
     .containerAbout {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         justify-content: center;
+
+
     }
 
     .about__profile {
