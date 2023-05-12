@@ -34,6 +34,7 @@ const enviarFormulario = () => {
     let message = document.getElementById('message').value;
     let number = 543512229161;
     let error = document.getElementById('Error')
+
     
         if(name === '' || surname === '' || message === '' || number === ''){
 
@@ -45,14 +46,14 @@ const enviarFormulario = () => {
 
             }
             
-    
+
          else {
-    
+
             var win = window.open(`https://wa.me/${number}?text=Hello!%20my%20name%20is%20${name}
             %20${surname}, I want to ...:%20${message}`, '_blank'); 
-           
+
         }
-    
+
       
     }
 

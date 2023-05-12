@@ -413,6 +413,7 @@ li {
     margin-bottom: 10px;
     text-align: center;
     padding: .5rem;
+    text-transform: uppercase;
 }
 
 .containerSkills {
